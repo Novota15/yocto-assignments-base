@@ -8,7 +8,7 @@ SRC_URI = "git://git@github.com:Novota15/aesd-assignments.git;protocol=ssh;branc
 
 PV = "1.0+git${SRCPV}"
 # TODO: set to reference a specific commit hash in your assignment repo
-SRCREV = "78f2039"
+SRCREV = "c4457a5"
 
 # This sets your staging directory based on WORKDIR, where WORKDIR is defined at 
 # https://docs.yoctoproject.org/ref-manual/variables.html?highlight=workdir#term-WORKDIR
