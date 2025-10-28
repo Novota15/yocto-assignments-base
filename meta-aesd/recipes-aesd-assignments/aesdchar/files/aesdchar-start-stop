@@ -1,0 +1,27 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:          aesdchar
+# Required-Start:    
+# Required-Stop:     
+# Default-Start:     S
+# Default-Stop:      K
+# Short-Description: Load aesdchar driver module
+# Description:       Load the aesdchar character driver kernel module
+### END INIT INFO
+
+case "$1" in
+    start)
+        echo "Loading aesdchar module"
+        modprobe aesdchar
+        ;;
+    stop)
+        echo "Unloading aesdchar module"
+        rmmod aesdchar
+        ;;
+    *)
+        echo "Usage: $0 {start|stop}"
+        exit 1
+esac
+
+exit 0
