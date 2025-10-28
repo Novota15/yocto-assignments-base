@@ -29,7 +29,7 @@ do_configure () {
 }
 
 do_compile () {
-	oe_runmake
+	oe_runmake USE_AESD_CHAR_DEVICE=1
 }
 
 do_install () {
